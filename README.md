@@ -14,6 +14,6 @@ To solve this problem you can try
 
 # GRU
 
-Fix GRU layers instead of Convolution layer => https://github.com/lmoroney/dlaicourse/pull/184/files
+Fix GRU layers instead of Convolution layer (PR from anisayari) => https://github.com/lmoroney/dlaicourse/pull/184/files
 
 https://www.kaggle.com/geektoday/generate-next-scene-of-jungle-book
