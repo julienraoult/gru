@@ -64,4 +64,46 @@ To solve this problem you can try
 
 Fix GRU layers instead of Convolution layer (PR from anisayari) => https://github.com/lmoroney/dlaicourse/pull/184/files
 
-https://www.kaggle.com/geektoday/generate-next-scene-of-jungle-book
+```
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+embedding_1 (Embedding)      (None, None, 64)          523840
+_________________________________________________________________
+gru (GRU)                    (None, None, 64)          24960
+_________________________________________________________________
+gru_1 (GRU)                  (None, 32)                9408
+_________________________________________________________________
+dense_2 (Dense)              (None, 64)                2112
+_________________________________________________________________
+dense_3 (Dense)              (None, 1)                 65
+=================================================================
+Total params: 560,385
+Trainable params: 560,385
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/10
+2021-06-06 23:35:43.581703: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-06-06 23:35:43.591839: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2592005000 Hz
+2021-06-06 23:35:43.803259: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-06-06 23:35:44.619900: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-06-06 23:35:44.660443: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+391/391 [==============================] - 628s 2s/step - loss: 0.6935 - accuracy: 0.4999 - val_loss: 0.6930 - val_accuracy: 0.5022
+Epoch 2/10
+391/391 [==============================] - 614s 2s/step - loss: 0.6929 - accuracy: 0.5015 - val_loss: 0.6930 - val_accuracy: 0.5023
+Epoch 3/10
+391/391 [==============================] - 624s 2s/step - loss: 0.6919 - accuracy: 0.5049 - val_loss: 0.6927 - val_accuracy: 0.5025
+Epoch 4/10
+391/391 [==============================] - 615s 2s/step - loss: 0.6902 - accuracy: 0.5093 - val_loss: 0.6935 - val_accuracy: 0.5000
+Epoch 5/10
+272/391 [===================>..........] - ETA: 4:05 - loss: 0.6875 - accuracy: 0.5125
+```
+
+
+
+
+# Another GRU example
+
+https://www.geeksforgeeks.org/ml-text-generation-using-gated-recurrent-unit-networks/
+
