@@ -5,6 +5,24 @@ https://github.com/lmoroney/dlaicourse/blob/master/TensorFlow%20In%20Practice/Co
 Resultats :
 
 ```
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+embedding (Embedding)        (None, None, 64)          523840
+_________________________________________________________________
+conv1d (Conv1D)              (None, None, 128)         41088
+_________________________________________________________________
+global_average_pooling1d (Gl (None, 128)               0
+_________________________________________________________________
+dense (Dense)                (None, 64)                8256
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 65
+=================================================================
+Total params: 573,249
+Trainable params: 573,249
+Non-trainable params: 0
+_________________________________________________________________
 Epoch 1/10
 2021-06-06 23:09:48.969485: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
 2021-06-06 23:09:48.972430: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2592005000 Hz
