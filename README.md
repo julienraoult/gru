@@ -99,11 +99,16 @@ Epoch 4/10
 Epoch 5/10
 391/391 [==============================] - 1175s 3s/step - loss: 0.6879 - accuracy: 0.5099 - val_loss: 0.6933 - val_accuracy: 0.5007
 Epoch 6/10
- 31/391 [=>............................] - ETA: 11:29 - loss: 0.6876 - accuracy: 0.4983
+391/391 [==============================] - 161868s 415s/step - loss: 0.6868 - accuracy: 0.5053 - val_loss: 0.6938 - val_accuracy: 0.5028
+Epoch 7/10
+391/391 [==============================] - 1093s 3s/step - loss: 0.6859 - accuracy: 0.5016 - val_loss: 0.6949 - val_accuracy: 0.5011
+Epoch 8/10
+391/391 [==============================] - 2589s 7s/step - loss: 0.6865 - accuracy: 0.4963 - val_loss: 0.6950 - val_accuracy: 0.5011
+Epoch 9/10
+391/391 [==============================] - 637s 2s/step - loss: 0.6854 - accuracy: 0.5116 - val_loss: 0.6960 - val_accuracy: 0.5008
+Epoch 10/10
+391/391 [==============================] - 597s 2s/step - loss: 0.6867 - accuracy: 0.5040 - val_loss: 0.6996 - val_accuracy: 0.5007
 ```
-
-
-
 
 # Another GRU example
 
